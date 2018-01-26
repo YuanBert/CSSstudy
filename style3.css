@@ -1,0 +1,44 @@
+body{
+	counter-reset: headnum;
+}
+h3.numbered{
+	counter-reset: mynum;
+}
+h3:before{
+	content: "("counter(headnum,upper-latin)")";
+	counter-increment: headnum;
+}
+p.numbered:before{
+	content: counter(mynum)"：";
+	counter-increment: mynum;
+	font-weight: bold;
+}
+li{
+	list-style: lower-roman;
+}
+h3{
+	border-top:4px solid #7c7;
+	border-color: #efe;
+	color:#050;
+}
+ul{
+	border:4px groove blue;
+}
+ul,#numbered{
+	border:1em solid #69b;
+	padding-right: 1em;
+}
+/*
+	信息：盒模型
+	margin
+	border
+	padding
+	元素
+	
+	颜色：
+	内边距总是跟元素的背景色一样，所以当你设置背景色时，你会发现背景色在元素本身和内边距上都生效了，
+	外边距总是透明的。
+
+	边框：
+	用border属性给元素四周指定统一的边框。在属性值中指定边框的宽度，样式还有颜色。
+*/

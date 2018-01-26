@@ -1,0 +1,108 @@
+strong{
+	color: red;
+	font: 200% serif;
+	background-color:#ddf;
+}
+/*
+.carrot{
+	color: orange;
+}
+*/
+.spinach{
+	color: lime;
+}
+.carrot:before{
+	content: url("head.png");
+}
+
+#first{
+	font-style: italic;
+}
+
+#second{
+}
+
+p{
+	color:blue;
+	font:italic 75%/125% "Comic Sans MS", cursive;
+}
+/* home page link  */
+a.homepage:link,a.homepage:visited{
+	padding: 1px 10x 1px 10px;
+	background: #555;
+	color: #fff;
+	border-radius: 3px;
+	border:1px outset rgba(50,50,50,.5);
+	font-family: georgia,serif;
+	font-size:14px;
+	font-style: italic;
+	text-decoration: none;
+}
+
+a.homepage:hover,a.homepage:focus,a.homepage:active{
+	background-color:#666;
+}
+
+div.menu-bar{
+	position: relative;
+	height: 30px;
+	width: 90%;
+}
+div.menu-bar ul{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	list-style-type: none;
+	background-color: #fffabf;
+	overflow: visible;
+}
+div.menu-bar ul ul {
+
+  display: none;
+}
+
+div.menu-bar ul li{
+	display: block;
+	float: left;
+	height: auto;
+	width: 120px;
+}
+li{
+	text-align: -webkit-mach-parent;
+}
+div.menu-bar li:hover > ul {
+  display: block;
+}
+
+body{
+	background: url("Blue-rule.png");
+	font:16px "Comic Sans MS",cursive;
+}
+/*
+	  A   E 		元素A的任一后代元素E（后代节点指A的子节点，子节点的子节点，以此类推）
+	  A > E 		元素A的任一子元素E（也就是直系后代）
+	  E:first-child 任一是其父母结点的第一个子节点的元素E
+	  B + E 		元素B的任一下一个兄弟元素E
+	  B ~ E         B元素后面的拥有共同父元素的兄弟元素E
+
+
+	  字体：
+	  你无法预料到用户是否可以访问样式表里定义的字体。所以在设置字体时，在属性后指定一个代替的字体列表是个很好的选择。
+
+
+	  在这个字体列表的最后加上系统字体中的一个，如：serif，sans-serif，cursive，fantasy或者monospace。
+
+	  使用 font-family 属性指定文本的字体。
+
+	  字号：
+	  font-size
+	  行高：
+	  line-height
+	  装饰：
+	  text-decoration
+	  其他属性
+	  使用font-style: italic;指定文本为斜体;
+	  使用 font-weight: bold;指定文本加粗;
+	  使用 font-variant: small-caps;指定文本为小型大写字母;
+	  如果我们想单独设置某个效果失效，我们可以把其相应的属性设置为normal或inherit.
+*/
